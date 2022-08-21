@@ -30,32 +30,32 @@ btnConvert.addEventListener("click", function () {
 
   function meterToFeet() {
     let feet = inputToNumber * 3.281;
-    feetH.textContent = feet;
+    feetH.textContent = feet.toFixed(1);
   }
 
   function feetToMeter() {
     let meter = inputToNumber * 0.305;
-    meterH2.textContent = meter;
+    meterH2.textContent = meter.toFixed(1);
   }
 
   function literToGallon() {
     let gallon = inputToNumber * 0.264;
-    gallonH.textContent = gallon.toFixed(3);
+    gallonH.textContent = gallon.toFixed(1);
   }
 
   function gallonToLiter() {
     let liter = inputToNumber * 3.785;
-    literH2.textContent = liter.toFixed(3);
+    literH2.textContent = liter.toFixed(1);
   }
 
   function kilogramToPound() {
     let pound = inputToNumber * 2.204;
-    poundH.textContent = pound;
+    poundH.textContent = pound.toFixed(1);
   }
 
   function poundToKilogram() {
     let kilogram = inputToNumber * 0.454;
-    kiloH2.textContent = kilogram;
+    kiloH2.textContent = kilogram.toFixed(1);
   }
 
   meterToFeet();
